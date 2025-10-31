@@ -75,7 +75,7 @@ function Cancelar(){
     $("#boxCadastro").hide();
     $('#alerta').fadeOut();   
 
-    var baseUrl = window.location.origin + '/AvaliacaoFormadora2/Autor'; // Base URL
+    var baseUrl = window.location.origin + '/AvaliacaoFormadora3/Autor'; // Base URL
     history.replaceState(null, null, baseUrl); 
 }
 
@@ -116,7 +116,7 @@ function Salvar(){
     if (!ValidarCampos()) return;
 
     var metodo = $("#acao").val() == "incluir" ? 'incluir' : 'alterar';
-    var href = window.location.origin + '/AvaliacaoFormadora2/Autor/' + metodo;
+    var href = window.location.origin + '/AvaliacaoFormadora3/Autor/' + metodo;
     history.replaceState(null, null, href);
 
     var formData = $('#formCadastroAutor').serialize();
@@ -140,7 +140,7 @@ function Salvar(){
 function Visualizar(id){
     LimparCampos();
     var parametro = id;  
-    var href = window.location.origin + '/AvaliacaoFormadora2/Autor/visualizar/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora3/Autor/visualizar/' + parametro;
     history.replaceState(null, null, href); 
 
     $.ajax({
@@ -157,7 +157,7 @@ function Visualizar(id){
 /** Excluir um registro de Autor */
 function Excluir(id){
     var parametro = id;  
-    var href = window.location.origin + '/AvaliacaoFormadora2/Autor/excluir/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora3/Autor/excluir/' + parametro;
     history.replaceState(null, null, href); 
 
     $.ajax({
@@ -178,14 +178,14 @@ function Excluir(id){
         }
     });
 
-    var baseUrl = window.location.origin + '/AvaliacaoFormadora2/Autor'; 
+    var baseUrl = window.location.origin + '/AvaliacaoFormadora3/Autor'; 
     history.replaceState(null, null, baseUrl); 
 }
 
 /** Realizar pesquisa de Autores */
 function Pesquisar(){
     var parametro = $('#txtpesquisa').val();
-    var href = window.location.origin + '/AvaliacaoFormadora2/Autor/pesquisar/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora3/Autor/pesquisar/' + parametro;
 
     $.ajax({
         url: href,
