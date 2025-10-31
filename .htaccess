@@ -1,0 +1,28 @@
+# arquivo de configuração do servidor apache
+
+##### EXPLICAÇÃO #####
+
+# RewriteEngine On
+# Informa para ativar o módulo de Reescrita
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# Informa que será criado uma condição a ser aplicado ao nome do arquivo requisitado. A exclamação é o sinal de negação e -f pede para verificar a existência de um arquivo físico. 
+# Portanto a tradução é:
+# CONDIÇÃO = SE ARQUIVO_REQUISITADO NÃO EXISTE FISICAMENTE
+
+# RewriteCond %{REQUEST_FILENAME} !-d
+# Informa que será criado uma condição a ser aplicado ao nome do arquivo requisitado. Novamente, a exclamação indica negação e -d pede para checar existência de um diretório fisicamente. 
+# Portanto a tradução é:
+# CONDIÇÃO = SE ARQUIVO_REQUISITADO NÃO EXISTE COMO DIRETÓRIO FISICAMENTE  
+
+# RewriteRule ^(.*)$ index.php?params=$1 [NC]
+# Informa que será aplicado uma regra de reescrita. 
+# ^(.*)$ Indica para armazenar em uma variável toda a requisição da URL (Circunflexo indica início e Cifrão indica fim). 
+# index.php?params=$1 Indica para substituir a requisição, redirecionando o fluxo para index.php e colocando-a inteiramente como um parâmetro de params.  [NC] São flags. 
+# No caso indica para não ser sensível a maiúsculas ou minúsculas (NON-CASE).
+# Obs.: O identificador params pode ser o nome que desejar.
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /AvaliacaoFormadora3/index.php?pagina=$1
