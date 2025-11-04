@@ -52,7 +52,7 @@ class AutorController extends Controller{
 
     public function visualizar()
     {
-        $id = $_POST['idAutor'];
+        $id = $_POST['id'];
         $daoAutor = new AutorDAO();
         $autor = $daoAutor->retornar($id);
 
@@ -65,7 +65,7 @@ class AutorController extends Controller{
 
     public function excluir()
     {
-        $id = $_POST['idAutor'];
+        $id = $_POST['id'];
         $daoAutor = new AutorDAO();
         $daoAutor->deletar($id);
     }

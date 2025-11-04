@@ -52,7 +52,7 @@ class EditoraController extends Controller{
 
     public function visualizar()
     {
-        $id = $_POST['idEditora'];
+        $id = $_POST['id'];
         $dao = new EditoraDAO();
         $editora = $dao->retornar($id);
 
@@ -65,7 +65,7 @@ class EditoraController extends Controller{
 
     public function excluir()
     {
-        $id = $_POST['idEditora'];
+        $id = $_POST['id'];
         $dao = new EditoraDAO();
         $dao->deletar($id);
     }
@@ -83,6 +83,17 @@ class EditoraController extends Controller{
 
         $dadosJson = json_encode($dadosArray);
         echo $dadosJson;
+    }
+
+    public function listarCombo() {
+        $dao = new EditoraDAO();
+        $dados = $dao->listar();
+
+        $dadosArray = array_map(function($obj) {
+            return $obj->toArray();
+        }, $dados);
+
+        echo json_encode($dadosArray);   
     }
 
 }

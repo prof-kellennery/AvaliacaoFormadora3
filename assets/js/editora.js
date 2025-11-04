@@ -21,7 +21,7 @@ $(function(){
         $("#boxCadastro").show();
         $('#salvar').removeAttr('disabled');
         $('#formulario :input').removeAttr("disabled");
-        $('#id_editora').prop("readonly", true);
+        //$('#id_editora').prop("readonly", true);
 
         var id = $(this).data('id');  
         Visualizar(id);
@@ -108,10 +108,9 @@ function ValidarCampos(){
 
 /** Carregar o Registro que deseja visualizar no formulário */
 function CarregarEditora(resposta){
-    $('#id_editora').val(resposta.idEditora);
+    //$('#id_editora').val(resposta.idEditora);
     $('#nome').val(resposta.nome);
-    $('#endereco').val(resposta.endereco);
-    $('#telefone').val(resposta.telefone);
+    $('#uf').val(resposta.uf);
 }
 
 /** Salvar um NOVO registro de Editora ou uma ATUALIZAÇÃO */

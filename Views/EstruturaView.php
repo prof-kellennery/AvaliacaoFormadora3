@@ -113,7 +113,7 @@ define('BASE_URL', '/AvaliacaoFormadora3');
 
     <div class="container">
         <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">AV2</strong> <span>Todos os direitos reservados</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">AV3</strong> <span>Todos os direitos reservados</span></p>
         </div>
         <div class="credits">
         Designed by <a href="https://unisuam.edu.br/">UNISUAM</a>
