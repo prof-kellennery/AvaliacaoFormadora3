@@ -7,7 +7,7 @@ define('BASE_URL', '/AvaliacaoFormadora3');
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Avaliação Formadora 2</title>
+  <title>Avaliação Formadora 3</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -86,7 +86,7 @@ define('BASE_URL', '/AvaliacaoFormadora3');
                 <li><a href="Livro"><i class="bi bi-book navicon"></i> Catálago de Livros</a></li>
                 <li><a href="Estoque"><i class="bi bi-box-seam navicon"></i> Controle de Estoque</a></li>
                 <li><a href="Cliente"><i class="bi bi-person-lines-fill navicon"></i> Clientes</a></li>
-                <li><a href="Venda"><i class="bi bi-cart navicon"></i> Registrar Vendas</a></li>
+                <li><a href="Venda"><i class="bi bi-cart navicon"></i> Vendas Realizadas</a></li>
                 <li><a href="Relatorio"><i class="bi bi-bar-chart navicon"></i> Relatórios</a></li>
                 <li><a href="Configuracao"><i class="bi bi-gear navicon"></i> Configurações</a></li>
                 <li><a href="Sobre"> <i class="bi bi-info-circle navicon"></i> Sobre</a></li>

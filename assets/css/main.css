@@ -1282,3 +1282,13 @@ section,
   font-style: italic; /* Caso queira manter o estilo itálico */
 }
 
+#total_venda {
+  font-size: 2em;          /* aumenta o tamanho da fonte */
+  font-weight: bold;       /* deixa o valor em negrito */
+  color: #007bff;          /* azul de destaque (pode trocar) */
+  text-align: right;       /* alinha o valor à direita */
+  background-color: #f8f9fa; /* fundo leve para destaque */
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
