@@ -1,5 +1,6 @@
-$(function(){
+$(function(){   
     var dados = $('#dados-cliente').data('cliente')
+
     CarregarDados(dados);
 
     //* Botão Visualizar Registro */
@@ -42,6 +43,18 @@ $(function(){
         Excluir(idParaExclusão);
     });
     /** */
+
+    // toggles para tipo de cliente no formulário (radio)
+    $(document).on('change', 'input[name="tipoCliente"]', function() {
+        var tipo = $(this).val();
+        if (tipo === 'F') {
+            $('#grupo-fisico').show();
+            $('#grupo-juridico').hide();
+        } else {
+            $('#grupo-fisico').hide();
+            $('#grupo-juridico').show();
+        }
+    });
 
 });
 
