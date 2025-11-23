@@ -1,33 +1,31 @@
-<<<<<<< HEAD
-# Template de Projeto
-## 📂 Estrutura do Projeto
+📄 Template de Projeto – Avaliação Formadora
 
-O projeto já possui toda a **estrutura básica** para iniciar a conexão com o banco de dados. Basta criar o banco de dados no servidor e realizar a conexão no arquivo Conexao.php.
+Este repositório disponibiliza um template básico para criação de um dashboard dentro da arquitetura de software utilizada no sistema.
+Ele já inclui a estrutura inicial necessária para conexão com o banco de dados e organização do projeto.
 
----
+📂 Estrutura do Projeto
 
-=======
->>>>>>> cc0035730c6a4542fcf17227e5205e8c5a3a4a25
-## 💻 Instruções de Uso
+O projeto está preparado para iniciar a comunicação com o banco de dados. Para utilizá-lo:
 
-### Download do Projeto
-Baixe este repositório e **coloque na raiz do servidor local** (htdocs do XAMPP), criando uma pasta com o mesmo nome do projeto:
+Crie o banco de dados no seu servidor local.
 
-C:\xampp\htdocs\AvaliacaoFormadora3
+Execute o script SQL do projeto para criar e popular as tabelas.
 
-> Caso o caminho do XAMPP tenha sido alterado, coloque a pasta na raiz do servidor correspondente.
 
-<<<<<<< HEAD
-=======
----
->>>>>>> cc0035730c6a4542fcf17227e5205e8c5a3a4a25
+💻 Instruções de Uso
+📥 Download do Template
 
-## ⚠️ Observações
+Baixe este repositório e coloque-o na raiz do servidor local (XAMPP), utilizando o seguinte caminho:
 
-- Verifique se o servidor MySQL do XAMPP está ativo antes de executar o projeto.  
-- Use a pasta raiz correta do servidor local para que o projeto funcione corretamente.  
+C:\xampp\htdocs\AvaliacaoFormadora
 
-<<<<<<< HEAD
 
-=======
->>>>>>> cc0035730c6a4542fcf17227e5205e8c5a3a4a25
+Se o XAMPP estiver instalado em outro local, use a pasta raiz correspondente ao seu ambiente.
+
+⚠️ Observações Importantes
+
+Verifique se o MySQL do XAMPP está ativo antes de rodar o projeto.
+
+A pasta deve estar corretamente posicionada na raiz do servidor local.
+
+É obrigatório executar o script SQL para criação e inserção dos dados necessários ao funcionamento do dashboard.
