@@ -80,7 +80,7 @@ function Cancelar(){
     $("#boxCadastro").hide();
     $('#alerta').fadeOut();   
 
-    var baseUrl = window.location.origin + '/AvaliacaoFormadora3/Livro'; 
+    var baseUrl = window.location.origin + '/AvaliacaoFormadora/Livro'; 
     history.replaceState(null, null, baseUrl); 
 }
 
@@ -158,7 +158,7 @@ function Salvar(){
     if (!ValidarCampos()) return;
 
     var metodo = $("#acao").val() == "incluir" ? 'incluir' : 'alterar';
-    var href = window.location.origin + '/AvaliacaoFormadora3/Livro/' + metodo;
+    var href = window.location.origin + '/AvaliacaoFormadora/Livro/' + metodo;
     history.replaceState(null, null, href);
 
     var formData = $('#formCadastroLivro').serialize();
@@ -182,7 +182,7 @@ function Salvar(){
 function Visualizar(id){
     LimparCampos();
     var parametro = id;  
-    var href = window.location.origin + '/AvaliacaoFormadora3/Livro/visualizar/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora/Livro/visualizar/' + parametro;
     history.replaceState(null, null, href); 
 
     $.ajax({
@@ -199,7 +199,7 @@ function Visualizar(id){
 /** Excluir um registro */
 function Excluir(id){
     var parametro = id;  
-    var href = window.location.origin + '/AvaliacaoFormadora3/Livro/excluir/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora/Livro/excluir/' + parametro;
     history.replaceState(null, null, href); 
 
     $.ajax({
@@ -220,14 +220,14 @@ function Excluir(id){
         }
     });
 
-    var baseUrl = window.location.origin + '/AvaliacaoFormadora3/Livro'; 
+    var baseUrl = window.location.origin + '/AvaliacaoFormadora/Livro'; 
     history.replaceState(null, null, baseUrl); 
 }
 
 /** Realizar pesquisa */
 function Pesquisar(){
     var parametro = $('#txtpesquisa').val();
-    var href = window.location.origin + '/AvaliacaoFormadora3/Livro/pesquisar/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora/Livro/pesquisar/' + parametro;
 
     $.ajax({
         url: href,

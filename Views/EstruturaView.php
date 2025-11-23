@@ -1,5 +1,5 @@
 <?php 
-define('BASE_URL', '/AvaliacaoFormadora3');
+define('BASE_URL', '/AvaliacaoFormadora');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,7 +7,7 @@ define('BASE_URL', '/AvaliacaoFormadora3');
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Avaliação Formadora 3</title>
+  <title>Avaliação Formadora</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -113,7 +113,7 @@ define('BASE_URL', '/AvaliacaoFormadora3');
 
     <div class="container">
         <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">AV3</strong> <span>Todos os direitos reservados</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Avaliação Formadora - BackEnd</strong> <span>Todos os direitos reservados</span></p>
         </div>
         <div class="credits">
         Designed by <a href="https://unisuam.edu.br/">UNISUAM</a>

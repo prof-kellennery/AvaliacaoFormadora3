@@ -25,4 +25,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /AvaliacaoFormadora3/index.php?pagina=$1
+RewriteRule ^(.*)$ /AvaliacaoFormadora/index.php?pagina=$1

@@ -40,7 +40,7 @@ class App{
       $metodo = 'index';
     }
 
-    $caminho = 'AvaliacaoFormadora3/Controllers/'.$controle.'php';
+    $caminho = 'AvaliacaoFormadora/Controllers/'.$controle.'php';
     if (!file_exists($caminho) && !method_exists($controle, $metodo))
     {
       $controle = 'ErroController';

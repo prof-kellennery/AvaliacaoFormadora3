@@ -129,7 +129,7 @@ function Cancelar(){
     $("#boxCadastro").hide();
     $('#alerta').fadeOut();   
 
-    var baseUrl = window.location.origin + '/AvaliacaoFormadora3/Cliente'; // Base URL
+    var baseUrl = window.location.origin + '/AvaliacaoFormadora/Cliente'; // Base URL
     history.replaceState(null, null, baseUrl); 
 }
 /** */
@@ -236,7 +236,7 @@ function Salvar(){
         var metodo = 'alterar';
     }
 
-    var href = window.location.origin + '/AvaliacaoFormadora3/Cliente/' + metodo;
+    var href = window.location.origin + '/AvaliacaoFormadora/Cliente/' + metodo;
     history.replaceState(null, null, href);
 
     // Serializa os dados do formulário
@@ -265,7 +265,7 @@ function Visualizar(id){
     
     LimparCampos();
     var parametro = id;  
-    var href = window.location.origin + '/AvaliacaoFormadora3/Cliente/visualizar/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora/Cliente/visualizar/' + parametro;
     history.replaceState(null, null, href); 
 
     $.ajax({
@@ -284,7 +284,7 @@ function Visualizar(id){
 function Excluir(id){
 
     var parametro = id;  
-    var href = window.location.origin + '/AvaliacaoFormadora3/Cliente/excluir/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora/Cliente/excluir/' + parametro;
     history.replaceState(null, null, href); 
 
     $.ajax({
@@ -307,7 +307,7 @@ function Excluir(id){
         }
     });
 
-    var baseUrl = window.location.origin + '/AvaliacaoFormadora3/Cliente'; // Base URL
+    var baseUrl = window.location.origin + '/AvaliacaoFormadora/Cliente'; // Base URL
     history.replaceState(null, null, baseUrl); 
 
 }
@@ -317,7 +317,7 @@ function Excluir(id){
 function Pesquisar(){
 
     var parametro = $('#txtpesquisa').val();
-    var href = window.location.origin + '/AvaliacaoFormadora3/Cliente/pesquisar/' + parametro;
+    var href = window.location.origin + '/AvaliacaoFormadora/Cliente/pesquisar/' + parametro;
     //history.replaceState(null, null, href); 
 
     $.ajax({
